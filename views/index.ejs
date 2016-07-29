@@ -1,0 +1,23 @@
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <ul class="users_info">
+  <% for(var i=0; i<userinfo.length; i++) {%>
+    <li class="user_info">
+      <span><%= userinfo[i].name %></span>
+      <span><%= userinfo[i].email %></span>
+      <span><%= userinfo[i].phone %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/form" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="email" placeholder="email" name="email">
+    <input type="number" placeholder="9783597835" name="phone">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
